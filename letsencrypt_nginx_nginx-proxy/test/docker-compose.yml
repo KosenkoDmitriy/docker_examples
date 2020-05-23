@@ -8,11 +8,11 @@ networks:
 services:
 
   nginx:
-    container_name: nginx
+    # container_name: nginx
     image: nginx:latest
     environment:
       - VIRTUAL_HOST=example2.com
       - LETSENCRYPT_HOST=example2.com
       - LETSENCRYPT_EMAIL=admin@example.com
-    # volumes:
-    #   - ./html:/usr/share/nginx/html
+    volumes:
+      - ./html:/usr/share/nginx/html

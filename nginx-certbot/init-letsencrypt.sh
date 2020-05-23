@@ -5,10 +5,11 @@ if ! [ -x "$(command -v docker-compose)" ]; then
   exit 1
 fi
 
-domains=(example.org www.example.org)
+# domains=(server.local.vega.isit.su www.server.local.vega.isit.su)
+domains=(server.local.vega.isit.su)
 rsa_key_size=4096
 data_path="./data/certbot"
-#email="admin@example.org" # Adding a valid address is strongly recommended
+#email="admin@server.local.vega.isit.su" # Adding a valid address is strongly recommended
 email="" # Adding a valid address is strongly recommended
 staging=1 # Set to 1 if you're testing your setup to avoid hitting request limits
 
